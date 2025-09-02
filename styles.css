@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.dashboard {
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.icon {
+    font-size: 28px;
+    color: #f7f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+.icon img {
+    width: 20px;  /* Giảm kích thước icon */
+    height: auto;
+}
+
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    position: relative;
+}
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.card .number {
+    font-size: 32px;
+    font-weight: bold;
+}
+.card.large {
+    grid-column: span 2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('hinhanh.jpg') center/cover no-repeat;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+.card.green { background: #2d7f2e; color: white; font-size: 20px; }
+.card.orange { background: #f4a261; color: white; font-size: 20px; }
+.card.dark { background: #1e1e1e; color: white; font-size: 20px; }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Hoặc max-width bằng với phần trên */
+    max-width: 500px; /* Điều chỉnh theo phần trên */
+    background-color: #2c5e36;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item img:hover {
+    opacity: 1;
+}
+
+
+
+.progress-circle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.bg {
+    stroke: #ddd; /* Màu nền vòng tròn */
+}
+
+.progress {
+    stroke: #4CAF50; /* Màu tiến trình */
+    stroke-dasharray: 157; /* 2 * π * r (Chu vi vòng tròn) */
+    stroke-dashoffset: 157; /* Ẩn toàn bộ */
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <div class="header">
+            <div class="icon">
+                <img src="icon1.png" alt="Menu Icon">
+            </div>            
+            <div class="avatar">
+                <img src="427866939_1840192776421005_8375882584684986874_n.jpg" alt="Avatar">
+            </div>
+            <div class="icon">
+                <img src="share.png" alt="Menu Icon">
+            </div>  
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card">
+                <div class="number" id="number1">127</div>
+                <div>Worst Air Quality, PM2.5</div>
+                <svg class="progress-circle" width="60" height="60">
+                    <circle class="bg" cx="25" cy="25" r="20"></circle>
+                    <circle class="progress" id="progress1" cx="25" cy="25" r="20"></circle>
+                </svg>
+            </div>
+            <div class="card green">
+                <div class="number" id="number2">93</div>
+                <div>Best Air Quality, PM2.5</div>
+                <svg class="progress-circle" width="60" height="60">
+                    <circle class="bg" cx="25" cy="25" r="20"></circle>
+                    <circle class="progress" id="progress2" cx="25" cy="25" r="20"></circle>
+                </svg>
+            </div>
+            <div class="card large">
+                <div class="number" id="number3">41</div>
+                <svg class="progress-circle" width="60" height="60">
+                    <circle class="bg" cx="25" cy="25" r="20"></circle>
+                    <circle class="progress" id="progress3" cx="25" cy="25" r="20"></circle>
+                </svg>
+            </div>
+            <div class="card dark">
+                <div class="number" id="number4">50</div>
+                <div>Equivalent cigarettes smoked last week</div>
+                <svg class="progress-circle" width="60" height="60">
+                    <circle class="bg" cx="25" cy="25" r="20"></circle>
+                    <circle class="progress" id="progress4" cx="25" cy="25" r="20"></circle>
+                </svg>
+            </div>
+            <div class="card orange">
+                <div class="number" id="number5">45%</div>
+                <div>Change in PM2.5 compared to previous week</div>
+                <svg class="progress-circle" width="60" height="60">
+                    <circle class="bg" cx="25" cy="25" r="20"></circle>
+                    <circle class="progress" id="progress5" cx="25" cy="25" r="20"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-nav">
+        <div class="nav-item">
+            <img src="icon1.png" alt="Icon 1">
+        </div>
+        <div class="nav-item">
+            <img src="icon2.png" alt="Icon 2">
+        </div>
+        <div class="nav-item">
+            <img src="icon3.png" alt="Icon 3">
+        </div>
+        <div class="nav-item">
+            <img src="icon4.png" alt="Icon 4">
+        </div>
+        <div class="nav-item">
+            <img src="icon5.png" alt="Icon 5">
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="./script.js"></script>
+    
+
+</body>
+</html>
